@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.torres {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.torre {
+    width: 100px;
+    height: 300px;
+    margin: 0 10px;
+    position: relative;
+    border: 2px solid transparent;
+}
+
+.pino {
+    width: 6px;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+
+.disco {
+    position: absolute;
+    height: 20px;
+    background-color: orange;
+    border: 1px solid black;
+    bottom: 0;  /* O disco ficará na base da torre */
+    left: 50%;
+    transform: translateX(-50%);
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torre de Hanói</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Torre de Hanói</h1>
+    <div class="torres">
+        <div class="torre" id="Torre1">
+            <div class="pino"></div>
+        </div>
+        <div class="torre" id="Torre2">
+            <div class="pino"></div>
+        </div>
+        <div class="torre" id="Torre3">
+            <div class="pino"></div>
+        </div>
+    </div>
+
+    <div id="mensagem"></div>
+
+    <!-- Botão de Recomeçar -->
+    <button id="recomecar-btn" onclick="recomecarJogo()">Recomeçar</button>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
